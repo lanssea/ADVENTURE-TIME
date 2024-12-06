@@ -1,0 +1,361 @@
+
+body {
+    overflow: hidden;       
+    background-image: linear-gradient(to bottom right, #a2c9ff, #a1f2e4);
+    margin: 0;       
+    height: 100vh;   
+    display: flex; 
+    justify-content: center;  
+    align-items: center; 
+}
+
+.mobile-warning {
+    display: none;}
+
+#inicio {
+    position: absolute;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;   
+    width: 100%;   
+    max-width: 1100px;   
+    height: 500px;   
+    background-color: #f2f2f2;
+    background-image: url('../img/titulo.png'); 
+    background-size: 50%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: black;
+    z-index: 10;
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-position: 49% center; 
+
+  }
+  
+  
+  #loading {
+    display:none;
+    margin-top: 400px; 
+    font-size: 18px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+ 
+  
+  #startButton {
+    position: absolute; 
+    z-index: 10; 
+    top:400px;
+    padding: 10px 100px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #6ab7ff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #startButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+.game {
+    position: relative;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;   
+    width: 100%;   
+    max-width: 1100px;   
+    height: 500px;   
+    margin: 0 auto;  
+    border-radius:18px; 
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+canvas {
+
+    width: 960px;         
+    height: 450px;       
+    margin-bottom: 10px;
+    border-radius:8px;
+    z-index: 1;
+  
+}
+
+
+.janela {
+    display:none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 15px;
+    z-index:10;
+    
+}
+
+
+.botoes {
+    top:70px;
+    left:100px;
+    display: flex;
+    position:absolute;
+    flex-direction: column;        
+    z-index:5; 
+}
+
+.botoes button {
+    background: transparent;
+    border: none;  
+    cursor: pointer;        
+    font-size: 12px; 
+    padding: 10px;    
+
+}
+
+
+.menu {
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu button {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer; 
+}
+
+
+
+.caixa {
+   
+   display:none;
+    position: absolute;
+    z-index: 2;
+    top: 48%;               
+    left: 50%;         
+    transform: translate(-50%, -50%);
+    width: 500px;        
+    height: 100px;      
+    color: white;          
+    text-align: center;   
+    line-height: 100px;       
+    border-radius: 8px;       
+}
+
+.caixa p {
+
+  
+    position: absolute;
+    width: 250px; 
+    height: auto; 
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: left; 
+    padding-top: 0px; 
+    line-height: 1.5;
+    word-wrap: break-word; 
+    font-size:13px;
+
+}
+
+
+.caixa2 {
+   
+    display:none;
+     position: absolute;
+     z-index: 2;
+     top: 50%;               
+     left: 37%;         
+     transform: translate(-50%, -50%);
+     width: 500px;        
+     height: 100px;      
+     color: white;          
+     text-align: center;   
+     line-height: 100px;       
+     border-radius: 8px;       
+ }
+
+ .caixa2 p {
+
+  
+    position: absolute;
+    width: 250px; 
+    height: auto; 
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: left; 
+    padding-top: 0px; 
+    line-height: 1.5;
+    word-wrap: break-word; 
+    font-size:13px;
+}
+
+
+.Jogar {
+    position:absolute;
+    bottom:20px;
+    left: 320px;
+    width: 60px;
+    z-index:7;
+}
+
+.fechar{
+    display:none;
+    position:absolute;
+    bottom:20px;
+    left: 320px;
+    width: 60px;
+    z-index:7;
+}
+
+
+.porta1{
+    position:absolute;
+    width:430px;
+    height:110px;
+    left:200px;
+    top:264px;
+    z-index:10;
+
+}
+
+.porta2{
+    position:absolute;
+    width:430px;
+    height:110px;
+    left:303px;
+    top:105px;
+    z-index:10;
+}
+
+.janela-entrar {
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    z-index:10;
+}
+
+.janela-sair {
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    z-index:10;
+}
+
+
+.janela-entrar button {
+    margin: 10px;
+    background: linear-gradient(to bottom right, #a2c9ff, #a1f2e4), rgba(0, 0, 0, 0.9);
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background 0.3s ease; /
+}
+
+.janela-entrar button:hover {
+    background: linear-gradient(to bottom right, #a2c9ff, #a1f2e4), rgba(0, 0, 0, 0.5); 
+    color: #007bff;
+}
+
+.janela-sair button {
+    margin: 10px;
+    background: linear-gradient(to bottom right, #a2c9ff, #a1f2e4), rgba(0, 0, 0, 0.9);
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background 0.3s ease; /
+}
+
+.janela-sair button:hover {
+    color: #007bff;
+    background: linear-gradient(to bottom right, #a2c9ff, #a1f2e4), rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.inventario {
+    
+    display:none;
+    transform: scale(0.78); 
+    width: 355px; 
+    height: 240px; 
+    overflow: hidden; 
+    position: absolute; 
+    border-radius:6px;
+    top: 150px; 
+    left: 64px;
+    flex-wrap: wrap; 
+    align-content: flex-start; 
+    justify-content: flex-start; 
+    background-image: url('../img/inventario.png');
+    z-index: 6;
+    background-size:cover;
+ 
+   
+}
+
+
+.item {
+
+    width: 95%;
+    height: 210px;
+    text-align: left;
+    padding: 4px;
+    box-sizing: border-box;
+    margin: 15px 2px 0; 
+    margin-left: 12px;
+    cursor:pointer 
+}
+
+.item img {
+    width: 37px; 
+    height: 37px; 
+    display:none  
+   }
+.item img:hover {
+    transform: scale(1.1); 
+   
+}
+
+
+
+
+

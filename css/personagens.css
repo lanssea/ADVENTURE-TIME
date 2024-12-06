@@ -1,0 +1,177 @@
+
+.ninfa {
+    position: absolute;
+    width: 83px; /* Largura de um frame */
+    height: 44px; /* Altura de um frame */
+    background: url('../img/ninfa3.png') no-repeat;
+    animation: play-sprite 1s steps(6) infinite;
+    z-index: 5;
+    background-size: 498px 44px; /* Tamanho total do sprite */
+
+    /* Redimensiona o sprite */
+    transform: scale(0.9); /* Diminui para 50% do tamanho original */
+    transform-origin: top left; /* Define a origem do redimensionamento */
+}
+
+  
+  /* Animação ajustada */
+  @keyframes play-sprite {
+    from {
+      background-position: 0 0; /* Primeiro frame */
+    }
+    to {
+      background-position: -498px 0; /* Último frame */
+    }
+  }
+
+  .ninfa2 {
+    position: absolute;
+    width: 86.91px; /* Largura de um frame */
+    height: 41px; /* Altura de um frame */
+    background: url('../img/ninfa4.png') no-repeat;
+    animation: play-ninfa2 1s steps(11) infinite; /* Animação com 11 frames */
+    z-index: 5;
+
+    /* Ajusta o tamanho do background para o tamanho total da imagem */
+    background-size: 956px 41px; /* Tamanho total da imagem */
+    
+}
+
+/* Animação de frame-by-frame */
+@keyframes play-ninfa2 {
+    from {
+        background-position: 0 0; /* Primeiro frame */
+    }
+    to {
+        background-position: -956px 0; /* Último frame */
+    }
+}
+
+.BMO {
+    background-image: url('../img/BMO.png'); /* Caminho para a imagem */
+    width: 32px; /* Largura de um frame */
+    height: 40px; /* Altura de um frame */
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: BMOAnimation 1s steps(3) infinite; /* 3 frames animados */
+    z-index: 5;
+    transform: scale(0.8); /* Reduz o tamanho para 80% */
+    transform-origin: center; /* Mantém a escala centralizada */
+}
+
+/* Define a animação para percorrer os frames */
+@keyframes BMOAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -96px 0; /* 3 frames de 32px cada = 96px */
+    }
+}
+
+.fonte {
+    position: absolute;
+    width: 228px; /* Largura de um frame */
+    height: 87px; /* Altura de um frame */
+    background: url('../img/fonte.png') no-repeat;
+    animation: play-fonte 1s steps(6) infinite; /* Animação com 6 steps */
+    z-index: 4;
+
+    /* Ajusta o tamanho do background para o tamanho total da imagem */
+    background-size: 1368px 87px; /* Tamanho total da imagem */
+}
+
+/* Animação de frame-by-frame */
+@keyframes play-fonte {
+    from {
+        background-position: 0 0; /* Começo da animação */
+    }
+    to {
+        background-position: -1368px 0; /* Final da animação */
+    }
+}
+
+.espada2 {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 35%; /* Centraliza horizontalmente */
+    top: 35%;  /* Centraliza verticalmente */
+    transform: translate(-50%, -50%) scale(2); /* Ajusta o ponto de referência e aumenta o tamanho */
+    width: 204px; /* Largura de um frame */
+    height: 157px; /* Altura do sprite */
+    background-image: url('../img/espadabrilho.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: 1633px 157px; /* Tamanho completo do sprite sheet */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    animation: animateSprite 1s steps(8) infinite; /* 1s para rodar todos os 8 frames */
+    
+}
+
+@keyframes animateSprite {
+    from {
+        background-position: 0 0; 
+    }
+    to {
+        background-position: -1633px 0; 
+    }
+}
+
+.livro {
+    display:none;
+    position: absolute;
+    z-index: 10;
+    left: 35%;
+    top: 15%;  /* Posição inicial mais alta */
+    width: 207px;
+    height: 221px;
+    background-image: url('../img/livro.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    
+    animation: flutuar 2s ease-in-out infinite;  /* Aplica a animação de flutuação */
+}
+
+@keyframes flutuar {
+    0% {
+        top: 15%;  /* Posição inicial */
+    }
+    50% {
+        top: 13%;  /* Posição mais alta, movendo para cima */
+    }
+    100% {
+        top: 15%;  /* Retorna à posição original */
+    }
+}
+
+.diamante2 {
+    
+    display:none;
+    position: absolute;
+    z-index: 10;
+    left: 35%;
+    top: 15%; 
+    width: 207px;
+    height: 221px;
+    background-image: url('../img/diamante.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+    animation: flutuar 2s ease-in-out infinite;  /* Aplica a animação de flutuação */
+}
+
+.dinheiro2 {
+    
+    display:none;
+    position: absolute;
+    z-index: 10;
+    left: 35%;
+    top: 15%; 
+    width: 207px;
+    height: 221px;
+    background-image: url('../img/dinheiro.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+    animation: flutuar 2s ease-in-out infinite;  /* Aplica a animação de flutuação */
+}

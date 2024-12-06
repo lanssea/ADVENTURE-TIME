@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>HORA DE AVENTURA</title>
+<link rel="icon" href="./img/icon.png">
+<script src="js/sprite.js"></script>
+<script src="js/script.js"></script>
+<script src="js/divisao.js"></script>
+<link rel="stylesheet" href="./css/estilos.css">
+<link rel="stylesheet" href="./css/personagens.css">
+<link rel="stylesheet" href="./css/responsivo.css">
+
+
+</head >
+<body>
+    <div class="mobile-warning">
+        <p>Este jogo não é suportado em dispositivos móveis. Jogue no desktop para uma melhor experiência!</p>
+    </div>
+    
+
+    <div id="inicio">
+    
+        <div id="loading">Carregando...</div>
+        <button id="startButton">Iniciar Jogo</button>
+      </div>
+
+      
+      
+    <div class="game">
+         <div class="menu">
+            <button class="FinnJake" id="FinnJake">
+                <img src="./img/fin-jake.png" >
+            </button>
+    
+            <button class="mapa">
+                <img src="./img/mapa.png" >
+            </button>
+
+            <button class="mochila">
+                <img src="./img/mochila.png" >
+            </button>
+        </div>
+
+        <div class="inventario">
+            <div class=" espada2"></div>
+            <div class="livro"></div>
+    
+            <div class="item">
+                <img class="inquiridium" src="./img/inquiridium.png">
+                <img class="espada" src="./img/espada.png">                
+            </div>
+
+        
+        </div>
+
+        <canvas width="1200" height="500"></canvas>
+ 
+
+    
+        <div class="ninfa"></div>
+        <div class="ninfa2"></div>
+        <div class="fonte"></div>
+        <div class="BMO"></div>
+       
+
+
+        <div class="BMO-jogo"></div>
+
+        
+
+  
+
+        <div class="porta1"></div>
+        <div class="porta2"></div>
+
+
+        <div class="janela-entrar">
+            <p>Entrar?</p>
+            <button class="sim" onclick="entrar()">Sim</button>
+            <button class="nao" onclick="fecharJanelaEntrar()">Não</button>
+        </div>
+        
+        <div class="PortaSair"></div>
+        <div class="janela-sair" style="display: none;">
+            <p>Deseja sair?</p>
+            <button class="sim-sair">Sim</button>
+            <button class="nao-sair">Não</button>
+        </div>
+        
+
+       <div class="casa"></div>
+       
+     
+    
+        <div class="janela">
+            <img src="./img/janela.png" alt="">
+            <div class="botoes">
+                <button id="scene1">Casa Na Árvore 🔓</button>
+                
+                
+            </div>
+        </div>
+    
+       
+    </div>
+    
+       <div class="caixa">
+        <p>BMO: Oi amigo! em busca de uma Aventura? o tesouro que você pegou ontem esta lá em cima! (precione "z" para abrir).</p>
+        <img src="./img/chat.png" >
+      </div>
+
+      <div class="caixa2">
+        <p>Ninfas: Oi vizinho! acho que você deixou um dos seus tesouros aqui fora (precione "x" para abrir).</p>
+        <img src="./img/chat.png" >
+      </div>
+
+      
+    
+
+
+
+</body>
+</html>
